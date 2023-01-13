@@ -4,7 +4,7 @@ import { generateId } from "../Utils/generateId.js"
 
 export class Car {
 
-  constructor (data) {
+  constructor(data) {
     this.id = generateId()
     this.make = data.make
     // NOTE JS dates are cool? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
@@ -37,7 +37,7 @@ export class Car {
             <button onclick="app.carsController.setActiveCar('${this.id}')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             See Details
             </button>
-            <button onclick="app.carsController.removeCar('${this.id}')" title="Delete car!" class="btn btn-danger">
+            <button onclick="app.carsController.removeCar()" title="Delete car!" class="btn btn-danger">
               <i class="mdi mdi-delete"></i>
             </button>
           </div>
@@ -75,7 +75,7 @@ export class Car {
     <form onsubmit="app.carsController.createCar()">
       <div class="form-floating mb-3">
         <input required type="text" minlength="3" class="form-control" id="car-make" placeholder="Car Make"
-          name="make">
+          >
         <label for="car-make">Make</label>
       </div>
       <div class="form-floating mb-3">
@@ -99,7 +99,7 @@ export class Car {
         <label for="car-miles">Mileage</label>
       </div>
       <div class="form-floating mb-3">
-        <input required type="text" class="form-control" id="car-color" placeholder="Car Color" name="color">
+        <input required type="text" class="form-control" id="car-color" placeholder="Car Color">
         <label for="car-color">Color</label>
       </div>
       <div class="form-floating">

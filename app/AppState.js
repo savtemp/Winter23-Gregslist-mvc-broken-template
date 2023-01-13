@@ -11,8 +11,7 @@ class AppState extends EventEmitter {
   values = loadState('values', [Value])
 
   // NOTE this does denote what is stored in this collection, but it also gives us intellisense in our code
-  /** @type {import('./Models/Car').Car[]} */
-  cars = loadState('cars', [Car])
+
   /** @type {import('./Models/Car').Car|null} */
   activeCar = null
 }

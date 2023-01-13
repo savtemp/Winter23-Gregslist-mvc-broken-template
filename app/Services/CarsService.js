@@ -20,7 +20,7 @@ class CarsService {
     // NOTE test that things are talking to each other
     // console.log("it's the car service", carId);
     // NOTE give me a new array of cars, where all of the cars Id's do not match the Id I passed down
-    let filteredArray = appState.cars.filter(c => c.id != carId)
+    let filteredArray = appState.cars.filter(c => c.id != id)
     appState.cars = filteredArray
     console.log('New array in AppState:', appState.cars);
     saveState('cars', appState.cars)

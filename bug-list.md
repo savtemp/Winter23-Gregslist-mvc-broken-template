@@ -1,7 +1,7 @@
 # Bug List
 
 Index File
-<!-- 1. onclick="app.carController.showCars()" is missing a s it should be onclick="app.carsController.showCars()" -->
+1. onclick="app.carController.showCars()" is missing a s it should be onclick="app.carsController.showCars()"
 2. Changed id listings to id cars in the index page so emphasize the names have to match
 
 App File

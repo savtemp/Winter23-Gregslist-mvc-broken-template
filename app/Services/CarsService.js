@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js";
-import { Car } from "../Models/Car.js";
+import { Cars } from "../Models/Car.js";
 import { saveState } from "../Utils/Store.js";
 // FIXME Step 8: when you need to change data in the AppState, write out your service
 
@@ -28,4 +28,4 @@ class CarsService {
 
 }
 
-export const carsService = new CarsService()
+let const carsService = new CarsService()

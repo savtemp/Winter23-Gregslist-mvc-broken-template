@@ -61,7 +61,7 @@ export class Car {
       <b>Price: $${this.price}</b>
       <p>${this.description}</p>
       <div>Mileage: ${this.mileage} miles</div>
-      <div>Color: ${this.color}</div>
+      <div>Color: Red</div>
       <div>Year: ${this.year}</div>
     </div>
     <div class="modal-footer">

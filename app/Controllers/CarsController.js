@@ -50,7 +50,6 @@ export class CarsController {
   }
 
   showCars() {
-    debugger
     _drawCars()
   }
 

@@ -17,7 +17,7 @@ function _drawActiveCar() {
 }
 
 
-// FIXME Step 5: Create a controller with a console log in the contructor
+// FIXME Step 5: Create a controller with a console log in the constructor
 export class CarsController {
 
   constructor() {
@@ -38,7 +38,9 @@ export class CarsController {
 
   createCar() {
     // NOTE don't refresh the page
+    // @ts-ignore
     window.event.preventDefault()
+    // @ts-ignore
     let form = window.event.target
     let formData = getFormData(form)
     console.log(formData);

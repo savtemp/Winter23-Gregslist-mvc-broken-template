@@ -23,4 +23,4 @@ Service File
 3. Changed the singleton statement in the service from export to let at the bottom of the file.
 
 AppState File 
-1. I changed cars from an array to an object and removed the loadState line that is up above. I also changed the intelisense up above from an array to a single object.
+1. I changed cars from an array to an object and removed the loadState line that is up above. I also changed the intellisense up above from an array to a single object.

@@ -10,7 +10,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', [Value])
 
-  /** @type {import('./Models/Car').Car} */
+  /** @type {import('./Models/Car').Car | Object} */
   cars = {}
   /** @type {import('./Models/Car').Car|null} */
   activeCar = null
